@@ -37,12 +37,13 @@
         </div>
         <div class="container py-4 py-xl-5 justify-content-center">
             <div class="row mb-5">
-
                 <div class="col-md-8 col-xl-11 text-center mx-auto">
                     <h2 style="color:#f13e3e;font-weight: bold;">Educational Contents</h2>
-                    <p>Welcome to our Education Contents where you'll find a carefully curated selection of books and resources dedicated to empowering women with knowledge about Polycystic Ovary Syndrome (PCOS). Here, we provide you with a wealth of information to better understand and manage your PCOS journey.
-
-                        Explore our collection to discover expert insights, practical tips, and personal stories from those who have navigated similar experiences. Whether you're seeking guidance on lifestyle changes, treatment options, or simply want to deepen your understanding of PCOS, our educational content is here to support you every step of the way.</p>
+                    <p class="center-justify">
+                        Welcome to our Education Contents where you'll find a carefully curated selection of books and resources dedicated to empowering women with knowledge about <span class="highlight">Polycystic Ovary Syndrome (PCOS)</span>. Here, we provide you with a wealth of information to better understand and manage your PCOS journey.
+                        <br><br>
+                        Explore our collection to discover expert insights, practical tips, and personal stories from those who have navigated similar experiences. Whether you're seeking guidance on lifestyle changes, treatment options, or simply want to deepen your understanding of PCOS, our educational content is here to support you every step of the way.
+                    </p>
                 </div>
             </div>
             @if($books->isEmpty())
@@ -65,8 +66,8 @@
                                     <p>
                                         @if(strlen($book->description) > 100)
                                             <span class="truncate">{{ Str::limit($book->description, 100) }}</span>
-                                            <span class="full-text" style="display: none;">{{ $book->description }}</span>
-                                            <span class="show-more">Show more</span>
+                                            <span class="full-text" style="display: none;">{{ Str($book->description, 100) }}</span>
+                                            <span class="show-more" style="color: #ed6662; cursor: pointer;">Show more</span>
                                         @else
                                             {{ $book->description }}
                                         @endif
@@ -84,10 +85,10 @@
 
         <div class="container py-4 py-xl-5">
             <div class="row mb-5">
-
                 <div class="col-md-8 col-xl-11 text-center mx-auto">
                     <h2 style="color:#f13e3e;font-weight: bold;">Educational Videos</h2>
-                    <p>Educational Videos section, where we bring you an engaging array of video content designed to empower and inform you about Polycystic Ovary Syndrome (PCOS). Our expertly curated videos offer valuable insights into PCOS management, lifestyle tips, and the latest research findings.
+                    <p class="center-justify">
+                        Educational Videos section, where we bring you an engaging array of video content designed to empower and inform you about <span class="highlight">Polycystic Ovary Syndrome (PCOS)</span>. Our expertly curated videos offer valuable insights into PCOS management, lifestyle tips, and the latest research findings.
                     </p>
                 </div>
             </div>
@@ -104,8 +105,15 @@
                                     <iframe allowfullscreen frameborder="0" width="560" height="315" style="width: 100%; height: 200px;" src="{{ $video->video_link }}"></iframe>
                                     <h4>{{ $video->video_title }}</h4>
                                     <p>{{ $video->speakers_name }}</p>
-                                    <p>{{ $video->description }}</p>
-                                </div>
+                                    <p>
+                                        @if(strlen($video->description) > 100)
+                                            <span class="truncate">{{ Str::limit($video->description, 100) }}</span>
+                                            <span class="full-text" style="display: none;">{{ Str($video->description, 100) }}</span>
+                                            <span class="show-more" style="color: #ed6662; cursor: pointer;">Show more</span>
+                                        @else
+                                            {{ $video->description }}
+                                        @endif
+                                    </p>                                </div>
                             </div>
                         </div>
                     @endforeach
@@ -128,11 +136,14 @@
         showMoreButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const fullText = this.previousElementSibling;
+                const truncateText = fullText.previousElementSibling;
                 if (fullText.style.display === "none") {
                     fullText.style.display = "inline";
+                    truncateText.style.display = "none";
                     this.textContent = "Show less";
                 } else {
                     fullText.style.display = "none";
+                    truncateText.style.display = "inline";
                     this.textContent = "Show more";
                 }
             });

@@ -1,6 +1,15 @@
 <style>
     /*Educational Contents*/
 
+    .center-justify {
+        text-align: justify;
+        text-align-last: center;
+    }
+    /*.highlight {*/
+    /*    background-color: #ffeb3b;*/
+    /*    font-weight: bold;*/
+    /*}*/
+
     .fixed-size-img {
         width: 100%;
         max-width: 197.7px;

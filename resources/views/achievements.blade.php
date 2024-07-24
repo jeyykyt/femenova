@@ -44,7 +44,7 @@
 
         <div class="col-md-8 col-xl-11 text-center mx-auto">
             <h2 style="color:#f13e3e;font-weight: bold;">FemeNova Achievements</h2>
-            <p>At FemeNova Health, we are proud to share our remarkable journey, a period marked by innovation and dedication to empowering women's health. Over the past year, we have made significant strides in advancing healthcare solutions that prioritize the unique needs of women.</p>
+            <p class="center-justify">At FemeNova Health, we are proud to share our remarkable journey, a period marked by innovation and dedication to empowering women's health. Over the past year, we have made significant strides in advancing healthcare solutions that prioritize the unique needs of women.</p>
         </div>
         <div class="container-fluid d-flex flex-column align-items-center py-4 py-xl-5" style="background: transparent;">
             <div class="row gy-4 row-cols-1 row-cols-md-2 w-100">
