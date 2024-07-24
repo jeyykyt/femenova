@@ -37,7 +37,7 @@
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-11 text-center mx-auto">
                     <h2 style="color:#f13e3e;font-weight: bold;">About Us</h2>
-                    <p class="w-lg-50">At FemeNova Health, we are dedicated to supporting and empowering women through comprehensive reproductive healtheducation, resources, and community.</p>
+                    <p class="center-justify">At FemeNova Health, we are dedicated to supporting and empowering women through comprehensive reproductive healtheducation, resources, and community.</p>
                 </div>
             </div>
 
