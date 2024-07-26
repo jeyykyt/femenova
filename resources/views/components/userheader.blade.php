@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar" style="height: 100px;">
-    <div class="container"><img src="{{ asset('img/logo.png') }}" width="119" height="60" style="width: 120px;">
+    <div class="container">
+        <a href="/" ><img src="{{asset('img/logo.png')}}" width="119" height="60"></a>
         <div class="row justify-content-right row-cols-md-1" style="text-align: center;width: 330px;margin: 0px;margin-left: 0;--bs-link-hover-color: #f13e3e; --bs-highlight-color: #ed6662;">
             <div class="col-sm-3 col-md-8 col-lg-5 offset-sm-3 offset-md-2 offset-lg-0" style="width: 120px;margin: 0px;padding: 0px;">
                 <h5 class="row-cols-sm-1" style="width: 120px;">Welcome,&nbsp;</h5>

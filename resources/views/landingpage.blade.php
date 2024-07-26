@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel with Tailwind CSS</title>
+
+
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <script src="https://cdn.tailwindcss.com"></script>
@@ -80,8 +82,7 @@
                 <p class=" text-lg leading-8 text-black-200" >all things women's health</p>
 
                 <div class="mt-10 flex items-start gap-x-6">
-                    <a href="/educ" class="rounded-md bg-customRed px-3.5 py-2.5 text-sm font-bold text-black shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-customRed">Get started</a>
-                </div>
+                    <a href="/educ" class="rounded-md bg-customRed px-3.5 py-2.5 text-sm font-bold text-black shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-customRed" style=" background-color: #ed6662">Get started</a>
             </div>
         </div>
     </div>

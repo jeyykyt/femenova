@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar" style="height: 100px;">
-    <div class="container"><img src="{{asset('img/logo.png')}}" width="119" height="60">
+    <div class="container">
+        <a href="/" ><img src="{{asset('img/logo.png')}}" width="119" height="60"></a>
+
         <div class="row justify-content-right row-cols-md-1" style="text-align: center;width: 50px;margin: 0px;margin-left: 0px;--bs-link-hover-color: #f13e3e; --bs-highlight-color: #ed6662;">
 
         </div>
