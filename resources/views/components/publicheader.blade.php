@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
     <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navcol-1"><img src="{{ asset('img/logo.png') }}" width="130" height="56" style="width: 120px;height: 60px;">
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <a href="/" ><img src="{{asset('img/logo.png')}}" width="119" height="60"></a>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link text-warning" href="/educ" style="padding-right: 2px;padding-left: 2px;--bs-info: #ed6662;--bs-info-rgb: 237,102,98;--bs-warning: #f13e3e;--bs-warning-rgb: 241,62,62;">Learn more!</a></li>
                 <li class="nav-item" style="margin-top: 4px;">

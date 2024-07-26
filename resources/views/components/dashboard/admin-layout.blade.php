@@ -24,7 +24,8 @@
 <div id="wrapper">
     <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark" style="background: linear-gradient(5deg, #ed6662, rgb(246,179,177) 33%, white);">
         <div class="container-fluid d-flex flex-column p-0">
-            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="{{asset('img/logo.png')}}" width="142" height="58">
+            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/">
+              <img src="{{asset('img/logo.png')}}" width="119" height="60">
                 <div class="sidebar-brand-icon rotate-n-15"></div>
                 <div class="sidebar-brand-text mx-3"></div>
             </a>
